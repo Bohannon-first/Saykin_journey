@@ -1,2 +1,12 @@
 // Глобальные
 @import "globals/fonts.scss";
+@import "globals/global.scss";
+@import "globals/variables.scss";
+@import "globals/page.scss";
+
+
+// Блоки
+// Общие
+@import "blocks/page-header.scss";
+
+// Главная страница
