@@ -1,0 +1,137 @@
+.reviews {
+  margin: 0 auto;
+  margin-bottom: 233px;
+  width: 1170px;
+}
+
+.reviews__list-countries {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 901px;
+  padding: 0;
+  padding-bottom: 15px;
+  margin: 0;
+  border-bottom: 1px solid rgba($color-text-general, 0.3);
+  margin-bottom: 65px;
+}
+
+.reviews__item-countries {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba($color-text-general, 0.3);
+
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__list-item {
+  display: grid;
+  grid-template-columns: 370px auto;
+  column-gap: 100px;
+  position: relative;
+}
+
+.reviews__title {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 53px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $color-button-general;
+  }
+}
+
+.reviews__description {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  color: rgba($color-text-general, 0.7);
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.reviews__button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 250px;
+  padding: 30px;
+  margin-top: auto;
+}
+
+.reviews__img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+.reviews__blockquote {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 382px;
+  margin: 0;
+  padding: 30px;
+  padding-right: 18px;
+  background-color: $color-white;
+  box-sizing: border-box;
+}
+
+.reviews__blockquote-title {
+  position: relative;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 32px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 68px;
+    height: 1px;
+    background-color: $color-button-general;
+  }
+}
+
+.reviews__blockquote-text {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 35px;
+  color: rgba($color-text-general, 0.7);
+}
+
+.reviews__author {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__photo-author {
+  margin-right: 15px;
+}
+
+.reviews__blockquote-author {
+  line-height: 19px;
+  font-weight: 500;
+  font-style: normal;
+}

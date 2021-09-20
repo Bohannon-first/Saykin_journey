@@ -1,0 +1,45 @@
+.promo {
+  background-image: url("../../img/background/desktop/bgc-promo-desktop.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 860px;
+  margin-bottom: 200px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 185px;
+  margin: 0 auto;
+  padding-right: 140px;
+  width: 1170px;
+}
+
+.promo__title {
+  margin: 0;
+  color: $color-white;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.promo__description {
+  margin: 0;
+  color: $color-white;
+  margin-left: auto;
+  margin-right: 33px;
+  margin-bottom: 39px;
+}
+
+.promo__link {
+  width: 340px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: 50px;
+}

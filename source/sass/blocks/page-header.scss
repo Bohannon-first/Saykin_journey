@@ -1,8 +1,36 @@
 .page-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   min-height: 100px;
   margin: 0 auto;
   width: 1170px;
   background-color: $color-white;
+}
+
+.main-nav {
+  min-width: 493px;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  color: $color-text-secondary;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+
+  &--phone {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
 }
