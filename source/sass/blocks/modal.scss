@@ -1,3 +1,4 @@
+// Стили модалки об отправке формы
 .modal--send {
   position: relative;
   display: flex;
@@ -53,4 +54,21 @@
 
 .modal {
   display: none;
+}
+
+// Стили модалки о покупке тура
+.modal--buy {
+  width: 728px;
+  margin: 0 auto;
+  background-color: $color-modal-send;
+  background-image: url("../../img/background/desktop/bgc-modal-buy.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 444px;
+}
+
+.modal__form-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
