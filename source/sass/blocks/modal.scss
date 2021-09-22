@@ -1,0 +1,56 @@
+.modal--send {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 728px;
+  height: 444px;
+  margin: 0 auto;
+  background-color: $color-modal-send;
+}
+
+.modal__text-send {
+  font-size: 25px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.modal__button-send {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 32px;
+    height: 1px;
+    background-color: rgba($color-text-secondary, 0.2);
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -10px;
+    width: 32px;
+    height: 1px;
+    background-color: rgba($color-text-secondary, 0.2);
+    transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: rgba($color-text-secondary, 1);
+  }
+}
+
+.modal {
+  display: none;
+}
