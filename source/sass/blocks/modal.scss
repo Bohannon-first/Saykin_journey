@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.modal__button-send {
+.modal__button-close {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -52,12 +52,12 @@
   }
 }
 
-.modal {
-  display: none;
-}
-
 // Стили модалки о покупке тура
 .modal--buy {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 728px;
   margin: 0 auto;
   background-color: $color-modal-send;
@@ -70,5 +70,39 @@
 .modal__form-buy {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  width: 390px;
+}
+
+.modal__form-buy-text {
+  font-size: 25px;
+  line-height: 42px;
+  font-weight: 600;
+  color: $color-menu-item;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.modal__input {
+  width: 269px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-text-secondary;
+  border: 1px solid $color-vertical-line;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.modal__input::placeholder {
+  color: $color-menu-item;
+}
+
+.modal__button-buy {
+  width: 176px;
+  padding: 18px;
+}
+
+.modal {
+  display: none;
 }
