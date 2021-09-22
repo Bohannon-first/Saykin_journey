@@ -1,0 +1,122 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1159px;
+}
+
+.page-footer__item {
+  width: 386px;
+}
+
+.page-footer__item--next-journeys {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+}
+
+.page-footer__text {
+  position: relative;
+  grid-column: 1 / 4;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600px;
+  margin: 0;
+  margin-bottom: 25px;
+  color: $color-text-secondary;
+}
+
+.page-footer__text--next-journeys::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 20px;
+  width: 189px;
+  height: 1px;
+  background-color: $color-vertical-line;
+  transform: rotate(90deg) translate(100px, -115px);
+}
+
+.page-footer__text--contacts::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -30px;
+  width: 189px;
+  height: 1px;
+  background-color: $color-vertical-line;
+  transform: rotate(90deg) translate(100px, -230px);
+}
+
+.page-footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer__list-item {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  color: rgba($color-text-secondary, 0.5);
+}
+
+.page-footer__item--contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 65px;
+  box-sizing: border-box;
+}
+
+.page-footer__link-email {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-button-general;
+  margin-bottom: 23px;
+  margin-left: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icons/icon-envelope-footer.svg");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 20px;
+    top: 0;
+    left: -40px;
+  }
+}
+
+.page-footer__link-phone {
+  position: relative;
+  line-height: 32px;
+  color: $color-button-general;
+  text-decoration: underline;
+  margin-left: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icons/icon-phone-footer.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -40px;
+  }
+}
+
+.page-footer__item--corporate {
+  padding-left: 55px;
+  box-sizing: border-box;
+}
+
+.page-footer__description {
+  font-size: 14px;
+  line-height: 24px;
+  width: 320px;
+  color: rgba($color-text-secondary, 0.5);
+  margin: 0;
+}
