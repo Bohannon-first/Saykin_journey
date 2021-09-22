@@ -1,0 +1,66 @@
+.feedback {
+  position: relative;
+  margin: 0 auto;
+  width: 1170px;
+  background-image: url("../../img/background/desktop/bgc-form-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 455px;
+  margin-bottom: 160px;
+}
+
+.feedback__form {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 656px;
+  padding: 50px;
+  background-color: $color-white;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px $color-shadow-form;
+  box-sizing: border-box;
+}
+
+.feedback__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $color-text-secondary;
+  text-align: center;
+}
+
+.feedback__text {
+  margin: 0;
+  margin-bottom: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.feedback__wrapper-input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback__input {
+  width: 269px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-text-secondary;
+  border: 1px solid rgba($color-text-general, 0.3);
+  padding: 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.feedback__input::placeholder {
+  color: $color-text-secondary;
+}
+
+.feedback__button-send {
+  width: 176px;
+  padding: 18px;
+  margin: 0 auto;
+}
