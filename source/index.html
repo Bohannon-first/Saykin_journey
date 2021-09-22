@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект Путешествие по Европе</title>
+  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Bold.woff2" as="font">
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -32,10 +37,10 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">О Путешествии</a>
+          <a class="main-nav__link" href="#catalog">О Путешествии</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Цены</a>
+          <a class="main-nav__link" href="#prices">Цены</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--phone" href="tel:+749978468446"
@@ -59,6 +64,7 @@
     </section>
 
     <section class="countries">
+      <a name="catalog"></a>
       <div class="countries__wrapper">
         <h2 class="countries__title">Места<br> посещения</h2>
         <p class="countries__description">Вы можете выбрать полный тур или<br> частичный, с посещением первых 3 мест</p>
@@ -228,36 +234,42 @@
     </section>
 
     <section class="prices">
+      <a name="prices"></a>
       <div class="prices__wrapper">
-        <div class="prices__item">
-          <h3 class="prices__title">Комплексный <span>$1999</span></h3>
-          <p class="prices__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <div class="prices__item prices__item--complex">
+          <h3 class="prices__title prices__title--complex">Комплексный <span class="prices__title-cost">$1999</span>
+          </h3>
+          <p class="prices__text prices__text--complex">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__price-list">
-            <li class="prices__price-item">Разработанный маршрут с гидом группы</li>
-            <li class="prices__price-item">Перелет, трансфер и проживание в отелях</li>
-            <li class="prices__price-item">Завтраки, ужины в отелях и ланчи на природе</li>
-            <li class="prices__price-item">Экскурсии по удивительно красивым местам Европы</li>
+            <li class="prices__price-item prices__price-item--complex">Разработанный маршрут с гидом группы</li>
+            <li class="prices__price-item prices__price-item--complex">Перелет, трансфер и проживание в отелях</li>
+            <li class="prices__price-item prices__price-item--complex">Завтраки, ужины в отелях и ланчи на природе</li>
+            <li class="prices__price-item prices__price-item--complex">Экскурсии по удивительно красивым местам Европы
+            </li>
           </ul>
           <button class="prices__button button">Купить тур сейчас</button>
         </div>
-        <div class="prices__item">
-          <h3 class="prices__title">Экономный <span>$1399</span></h3>
-          <p class="prices__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+        <div class="prices__item prices__item--econom">
+          <h3 class="prices__title prices__title--econom">Экономный
+            <span class="prices__title-cost">$1399</span>
+          </h3>
+          <p class="prices__text prices__text--econom">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
           <ul class="prices__price-list">
-            <li class="prices__price-item">Разработанный маршрут с гидом группы</li>
-            <li class="prices__price-item">Перелет и трансфер</li>
-            <li class="prices__price-item">Проживание в хостелах при отелях</li>
-            <li class="prices__price-item">Только завтраки в отелях</li>
-            <li class="prices__price-item">Экскурсии по удивительно красивым местам Европы</li>
+            <li class="prices__price-item prices__price-item--econom">Разработанный маршрут с гидом группы</li>
+            <li class="prices__price-item prices__price-item--econom">Перелет и трансфер</li>
+            <li class="prices__price-item prices__price-item--econom">Проживание в хостелах при отелях</li>
+            <li class="prices__price-item prices__price-item--econom">Только завтраки в отелях</li>
+            <li class="prices__price-item prices__price-item--econom">Экскурсии по удивительно красивым местам Европы
+            </li>
           </ul>
           <button class="prices__button button">Купить тур сейчас</button>
         </div>
-        <div class="prices__item">
+        <div class="prices__item prices__item--description">
           <h2 class="prices__title prices__title--main">Цены</h2>
           <p class="prices__description">Специально для Вас мы разработали 2 пакета цен с разными условиями,
             отталкиваясь от Ваших потребностей и
             возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-          <p class="prices__contacts"><strong>Свяжитесь с нами</strong>
+          <p class="prices__contacts">Свяжитесь с нами
             <a class="prices__link-phone" href="tel:+749978468446"
               aria-label="Наш контактный телефон +7 (499) -784-684-46">+7 (499)
               -784-684-46</a>
@@ -271,8 +283,9 @@
         <h3 class="feedback__title">У Вас остались вопросы?</h3>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <div class="feedback__wrapper-input">
-          <input class="feedback__phone" type="tel" name="phone" placeholder="* +7 Введите 10 цифр номера">
-          <input class="feedback__email" type="email" name="email" placeholder="E-mail">
+          <input class="feedback__input feedback__input--phone" type="tel" name="phone"
+            placeholder="* +7 Введите 10 цифр номера">
+          <input class="feedback__input feedback__input--email" type="email" name="email" placeholder="E-mail">
         </div>
         <button class="feedback__button-send button" type="submit">Отправить</button>
       </form>
@@ -281,7 +294,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__item page-footer__item--next-journeys">
-      <p class="page-footer__text">Следующие путешествия</p>
+      <p class="page-footer__text page-footer__text--next-journeys"><strong>Следующие путешествия</strong></p>
       <ul class="page-footer__list">
         <li class="page-footer__list-item">Марсель</li>
         <li class="page-footer__list-item">Ним</li>
@@ -304,15 +317,15 @@
         <li class="page-footer__list-item">Гренобль</li>
       </ul>
     </div>
-    <div class="page-footer__item">
-      <p class="page-footer__text">Наши контакты</p>
+    <div class="page-footer__item page-footer__item--contacts">
+      <p class="page-footer__text page-footer__text--contacts"><strong>Наши контакты</strong></p>
       <a class="page-footer__link-email" href="mailto:puteshestviemechta@gmail.ru"
         aria-label="Наш адрес электронной почты puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
       <a class="page-footer__link-phone" href="tel:+749978468446"
         aria-label="Наш контактный телефон +7 (499) -784-684-46">+7 (499) -784-684-46</a>
     </div>
-    <div class="page-footer__item">
-      <p class="page-footer__text">Корпоративные путешествия</p>
+    <div class="page-footer__item page-footer__item--corporate">
+      <p class="page-footer__text"><strong>Корпоративные путешествия</strong></p>
       <p class="page-footer__description">Также вы можете заказать индивидуальное путешествие под вашу компанию.
         Подобные туры очень сближают компанию,
         помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
@@ -320,8 +333,8 @@
   </footer>
 
   <section class="modal modal--send">
-    <h3 class="modal__title">Форма успешно отправлена, спасибо! :)</h3>
-    <button class="modal__button modal__button--close-send" type="button" aria-label="Закрыть">
+    <p class="modal__text-send">Форма успешно отправлена,<br> спасибо! :)</p>
+    <button class="modal__button-send" type="button" aria-label="Закрыть">
     </button>
   </section>
 </body>
