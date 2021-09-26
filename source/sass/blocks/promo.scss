@@ -5,6 +5,25 @@
   background-size: 100% auto;
   min-height: 860px;
   margin-bottom: 200px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/desktop/bgc-promo-desktop@2x.jpg");
+    background-size: 3840px auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../../img/background/tablet/bgc-promo-tablet.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 344px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/tablet/bgc-promo-tablet@2x.jpg");
+    background-size: 1536px auto;
+  }
 }
 
 .promo__wrapper {
@@ -14,6 +33,13 @@
   margin: 0 auto;
   padding-right: 140px;
   width: 1170px;
+
+  @media (max-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
 }
 
 .promo__title {
@@ -24,6 +50,18 @@
   font-weight: 600;
   margin-left: auto;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 15px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .promo__description {
@@ -32,6 +70,17 @@
   margin-left: auto;
   margin-right: 33px;
   margin-bottom: 39px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 398px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .promo__link {
@@ -42,4 +91,14 @@
   padding-right: 40px;
   margin-left: auto;
   margin-right: 50px;
+
+  @media (max-width: $tablet-width) {
+    width: 250px;
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
 }

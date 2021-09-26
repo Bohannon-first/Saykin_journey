@@ -2,6 +2,11 @@
   margin: 0 auto;
   margin-bottom: 233px;
   width: 1170px;
+
+  @media (max-width: $tablet-width) {
+    width: $tablet-width;
+    margin-bottom: 80px;
+  }
 }
 
 .reviews__list-countries {
@@ -15,6 +20,12 @@
   margin: 0;
   border-bottom: 1px solid rgba($color-text-general, 0.3);
   margin-bottom: 65px;
+
+  @media (max-width: $tablet-width) {
+    justify-content: flex-start;
+    padding-left: 21px;
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__item-countries {
@@ -24,7 +35,16 @@
   color: rgba($color-text-general, 0.3);
 
   &:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 95px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 21px;
+
+    &:not(:last-child) {
+      margin-right: 70px;
+    }
   }
 }
 
@@ -35,10 +55,21 @@
 }
 
 .reviews__list-item {
+  display: none;
+}
+
+.reviews__list-item--current {
   display: grid;
   grid-template-columns: 370px auto;
   column-gap: 100px;
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
 }
 
 .reviews__title {
@@ -60,6 +91,18 @@
     height: 3px;
     background-color: $color-button-general;
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .reviews__description {
@@ -68,6 +111,13 @@
   color: rgba($color-text-general, 0.7);
   margin: 0;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    text-align: center;
+  }
 }
 
 .reviews__button {
@@ -76,11 +126,19 @@
   width: 250px;
   padding: 30px;
   margin-top: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__img {
   grid-column: 2 / 3;
   grid-row: 1 / 4;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .reviews__blockquote {
@@ -93,6 +151,12 @@
   padding-right: 18px;
   background-color: $color-white;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    top: initial;
+    right: initial;
+    bottom: 8px;
+  }
 }
 
 .reviews__blockquote-title {

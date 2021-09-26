@@ -71,37 +71,62 @@
         <ul class="countries__list">
           <li class="countries__item">
             <a class="countries__link" href="#">
-              <img class="countries__img" src="img/content/desktop/greece-desktop.jpg"
-                alt="Расположенный на вершине скалы монастырь «Метеора» на фоне полузаснеженных гор в Греции"
-                width="350" height="430">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="img/content/tablet/greece-tablet.jpg 1x, img/content/tablet/greece-tablet@2x.jpg 2x">
+                <img class="countries__img" src="img/content/desktop/greece-desktop.jpg"
+                  srcset="img/content/desktop/greece-desktop@2x.jpg 2x"
+                  alt="Расположенный на вершине скалы монастырь «Метеора» на фоне полузаснеженных гор в Греции"
+                  width="350" height="430">
+              </picture>
               <span class="countries__name">Греция</span>
             </a>
           </li>
           <li class="countries__item">
             <a class="countries__link" href="#">
-              <img class="countries__img" src="img/content/desktop/albania-desktop.jpg"
-                alt="Отели и пляжи курорта «Ксамиль» в Албании, вид сверху" width="350" height="430">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="img/content/tablet/albania-tablet.jpg 1x, img/content/tablet/albania-tablet@2x.jpg 2x">
+                <img class="countries__img" src="img/content/desktop/albania-desktop.jpg"
+                  srcset="img/content/desktop/albania-desktop@2x.jpg 2x"
+                  alt="Отели и пляжи курорта «Ксамиль» в Албании, вид сверху" width="350" height="430">
+              </picture>
               <span class="countries__name">Албания</span>
             </a>
           </li>
           <li class="countries__item">
             <a class="countries__link" href="#">
-              <img class="countries__img" src="img/content/desktop/macedonia-desktop.jpg"
-                alt="Старинная церковь в Македонии на фоне Охридского озера" width="350" height="430">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="img/content/tablet/macedonia-tablet.jpg 1x, img/content/tablet/macedonia-tablet@2x.jpg 2x">
+                <img class="countries__img" src="img/content/desktop/macedonia-desktop.jpg"
+                  srcset="img/content/desktop/macedonia-desktop@2x.jpg 2x"
+                  alt="Старинная церковь в Македонии на фоне Охридского озера" width="350" height="430">
+              </picture>
               <span class="countries__name">Македония</span>
             </a>
           </li>
           <li class="countries__item">
             <a class="countries__link" href="#">
-              <img class="countries__img" src="img/content/desktop/montenegro-desktop.jpg"
-                alt="Каньон реки «Тара» в Черногории, вид сверху" width="350" height="430">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="img/content/tablet/montenegro-tablet.jpg 1x, img/content/tablet/montenegro-tablet@2x.jpg 2x">
+                <img class="countries__img" src="img/content/desktop/montenegro-desktop.jpg"
+                  srcset="img/content/desktop/montenegro-desktop@2x.jpg 2x"
+                  alt="Каньон реки «Тара» в Черногории, вид сверху" width="350" height="430">
+              </picture>
               <span class="countries__name">Черногория</span>
             </a>
           </li>
           <li class="countries__item">
             <a class="countries__link" href="#">
-              <img class="countries__img" src="img/content/desktop/croatia-desktop.jpg"
-                alt="Пещера «Бередине» в Хорватии" width="350" height="430">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="img/content/tablet/croatia-tablet.jpg 1x, img/content/tablet/croatia-tablet@2x.jpg 2x">
+                <img class="countries__img" src="img/content/desktop/croatia-desktop.jpg"
+                  srcset="img/content/desktop/croatia-desktop@2x.jpg 2x" alt="Пещера «Бередине» в Хорватии" width="350"
+                  height="430">
+              </picture>
               <span class="countries__name">Хорватия</span>
             </a>
           </li>
@@ -111,6 +136,7 @@
 
     <section class="reviews">
       <ul class="reviews__list-countries">
+        <li class="reviews__item-countries">Греция</li>
         <li class="reviews__item-countries">Албания</li>
         <li class="reviews__item-countries">Македония</li>
         <li class="reviews__item-countries">Черногория</li>
@@ -125,9 +151,14 @@
             путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
             600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
           <button class="reviews__button button">Купить тур сейчас</button>
-          <img class="reviews__img" src="img/content/desktop/greece-desktop430x596.jpg"
-            alt="Расположенный на вершине скалы монастырь «Метеора» на фоне полузаснеженных гор в Греции" width="430"
-            height="596">
+          <picture class="reviews__img">
+            <source media="(max-width: 768px)"
+              srcset="img/content/tablet/greece-reviews-tablet.jpg 1x, img/content/tablet/greece-reviews-tablet@2x.jpg 2x">
+            <img class="reviews__img" src="img/content/desktop/greece-desktop430x596.jpg"
+              srcset="img/content/desktop/greece-desktop430x596@2x.jpg 2x"
+              alt="Расположенный на вершине скалы монастырь «Метеора» на фоне полузаснеженных гор в Греции" width="430"
+              height="596">
+          </picture>
           <blockquote class="reviews__blockquote">
             <h3 class="reviews__blockquote-title">Отзывы</h3>
             <p class="reviews__blockquote-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие
@@ -136,12 +167,13 @@
             </p>
             <div class="reviews__author">
               <img class="reviews__photo-author" src="img/content/public/author-greece.png"
-                alt="Фотография автора комментария" width="37" height="38">
+                srcset="img/content/public/author-greece@2x.png 2x" alt="Фотография автора комментария" width="37"
+                height="38">
               <cite class="reviews__blockquote-author">Влада Голицина</cite>
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item visually-hidden">
+        <li class="reviews__list-item">
           <h2 class="reviews__title">Албания</h2>
           <p class="reviews__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
             удивительным пляжем. Вначале
@@ -149,8 +181,13 @@
             присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
           </p>
           <button class="reviews__button button">Купить тур сейчас</button>
-          <img class="reviews__img" src="img/content/desktop/albania-desktop430x596.jpg"
-            alt="Отели и пляжи курорта «Ксамиль» в Албании, вид сверху" width="430" height="596">
+          <picture class="reviews__img">
+            <source media="(max-width: 768px)"
+              srcset="img/content/tablet/albania-reviews-tablet.jpg 1x, img/content/tablet/albania-reviews-tablet@2x.jpg 2x">
+            <img class="reviews__img" src="img/content/desktop/albania-desktop430x596.jpg"
+              srcset="img/content/desktop/albania-desktop430x596@2x.jpg 2x"
+              alt="Отели и пляжи курорта «Ксамиль» в Албании, вид сверху" width="430" height="596">
+          </picture>
           <blockquote class="reviews__blockquote">
             <h3 class="reviews__blockquote-title">Отзывы</h3>
             <p class="reviews__blockquote-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму
@@ -159,20 +196,26 @@
             </p>
             <div class="reviews__author">
               <img class="reviews__photo-author" src="img/content/public/author-albania.png"
-                alt="Фотография автора комментария" width="37" height="38">
+                srcset="img/content/public/author-albania@2x.png 2x" alt="Фотография автора комментария" width="37"
+                height="38">
               <cite class="reviews__blockquote-author">Маришка</cite>
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item visually-hidden">
+        <li class="reviews__list-item">
           <h2 class="reviews__title">Македония</h2>
           <p class="reviews__description">В Македонии нашей целью будет посетить Палаошник, который расположился в
             удивительно красивой лесистой
             местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
             где находится археологический памятник Кокино в длину около 100 метров.</p>
           <button class="reviews__button button">Купить тур сейчас</button>
-          <img class="reviews__img" src="img/content/desktop/macedonia-desktop430x596.jpg"
-            alt="Старинная церковь в Македонии на фоне Охридского озера" width="430" height="596">
+          <picture class="reviews__img">
+            <source media="(max-width: 768px)"
+              srcset="img/content/tablet/macedonia-reviews-tablet.jpg 1x, img/content/tablet/macedonia-reviews-tablet@2x.jpg 2x">
+            <img class="reviews__img" src="img/content/desktop/macedonia-desktop430x596.jpg"
+              srcset="img/content/desktop/macedonia-desktop430x596@2x.jpg 2x"
+              alt="Старинная церковь в Македонии на фоне Охридского озера" width="430" height="596">
+          </picture>
           <blockquote class="reviews__blockquote">
             <h3 class="reviews__blockquote-title">Отзывы</h3>
             <p class="reviews__blockquote-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но
@@ -181,41 +224,53 @@
               гору.
             </p>
             <div class="reviews__author">
-              <img class="reviews__photo-author" src="img/content/public/author-macedinia.png"
-                alt="Фотография автора комментария" width="37" height="38">
+              <img class="reviews__photo-author" src="img/content/public/author-macedonia.png"
+                srcset="img/content/public/author-macedonia@2x.png 2x" alt="Фотография автора комментария" width="37"
+                height="38">
               <cite class="reviews__blockquote-author">Михаил Кузьмин</cite>
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item visually-hidden">
+        <li class="reviews__list-item">
           <h2 class="reviews__title">Черногория</h2>
           <p class="reviews__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
             некоторых местах высотой берегов
             доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
           <button class="reviews__button button">Купить тур сейчас</button>
-          <img class="reviews__img" src="img/content/desktop/montenegro-desktop430x596.jpg"
-            alt="Каньон реки «Тара» в Черногории, вид сверху" width="430" height="596">
+          <picture class="reviews__img">
+            <source media="(max-width: 768px)"
+              srcset="img/content/tablet/montenegro-reviews-tablet.jpg 1x, img/content/tablet/montenegro-reviews-tablet@2x.jpg 2x">
+            <img class="reviews__img" src="img/content/desktop/montenegro-desktop430x596.jpg"
+              srcset="img/content/desktop/montenegro-desktop430x596@2x.jpg 2x"
+              alt="Каньон реки «Тара» в Черногории, вид сверху" width="430" height="596">
+          </picture>
           <blockquote class="reviews__blockquote">
             <h3 class="reviews__blockquote-title">Отзывы</h3>
             <p class="reviews__blockquote-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве
               что в фильмах :) Всем советую
             </p>
             <div class="reviews__author">
-              <img class="reviews__photo-author" src="img/content/public/author-croatia.png"
-                alt="Фотография автора комментария" width="37" height="38">
+              <img class="reviews__photo-author" src="img/content/public/author-montenegro.png"
+                srcset="img/content/public/author-montenegro@2x.png 2x" alt="Фотография автора комментария" width="37"
+                height="38">
               <cite class="reviews__blockquote-author">Анастасия Мей</cite>
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item visually-hidden">
+        <li class="reviews__list-item">
           <h2 class="reviews__title">Хорватия</h2>
           <p class="reviews__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
             увлечет вас на 80-ти метровую
             глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
             сталагмитами — формировавшимися тысячи и тысячи лет.</p>
           <button class="reviews__button button">Купить тур сейчас</button>
-          <img class="reviews__img" src="img/content/desktop/croatia-desktop430x596.jpg"
-            alt="Пещера «Бередине» в Хорватии" width="430" height="596">
+          <picture class="reviews__img">
+            <source media="(max-width: 768px)"
+              srcset="img/content/tablet/croatia-reviews-tablet.jpg 1x, img/content/tablet/croatia-reviews-tablet@2x.jpg 2x">
+            <img class="reviews__img" src="img/content/desktop/croatia-desktop430x596.jpg"
+              srcset="img/content/desktop/croatia-desktop430x596@2x.jpg 2x" alt="Пещера «Бередине» в Хорватии"
+              width="430" height="596">
+          </picture>
           <blockquote class="reviews__blockquote">
             <h3 class="reviews__blockquote-title">Отзывы</h3>
             <p class="reviews__blockquote-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто
@@ -225,7 +280,8 @@
             </p>
             <div class="reviews__author">
               <img class="reviews__photo-author" src="img/content/public/author-croatia.png"
-                alt="Фотография автора комментария" width="37" height="38">
+                srcset="img/content/public/author-croatia@2x.png 2x" alt="Фотография автора комментария" width="37"
+                height="38">
               <cite class="reviews__blockquote-author">Владимир Мулицин</cite>
             </div>
           </blockquote>
@@ -328,7 +384,7 @@
       <p class="page-footer__text"><strong>Корпоративные путешествия</strong></p>
       <p class="page-footer__description">Также вы можете заказать индивидуальное путешествие под вашу компанию.
         Подобные туры очень сближают компанию,
-        помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+        помогают поддерживать корпоративный дух, а также являются отличным времяпрепровождением</p>
     </div>
   </footer>
 

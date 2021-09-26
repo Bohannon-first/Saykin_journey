@@ -6,4 +6,23 @@
   margin: 0 auto;
   width: 1170px;
   background-color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    min-height: 50px;
+    width: $tablet-width;
+  }
+}
+
+.page-header__logo-wrapper {
+  @media (max-width: $tablet-width) {
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__logo {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
