@@ -5,10 +5,15 @@
 .main-nav__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   width: inherit;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .main-nav__link {

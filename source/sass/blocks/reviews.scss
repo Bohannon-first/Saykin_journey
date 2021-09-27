@@ -7,6 +7,11 @@
     width: $tablet-width;
     margin-bottom: 80px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: $mobile-width;
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__list-countries {
@@ -25,6 +30,23 @@
     justify-content: flex-start;
     padding-left: 21px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    padding: 0 16px;
+    border-bottom: 0;
+    margin-bottom: 39px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 16px;
+      bottom: -15px;
+      width: 288px;
+      height: 1px;
+      background-color: rgba($color-text-general, 0.3);
+    }
   }
 }
 
@@ -45,6 +67,18 @@
     &:not(:last-child) {
       margin-right: 70px;
     }
+  }
+
+  @media (max-width: $mobile-width) {
+    &:not(:last-child) {
+      margin-right: 95px;
+    }
+  }
+}
+
+.reviews__item-countries--hidden {
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 
@@ -118,6 +152,10 @@
     padding-right: 21px;
     text-align: center;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+  }
 }
 
 .reviews__button {
@@ -129,6 +167,12 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 30px;
+    padding: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin-bottom: 50px;
   }
 }
 
@@ -157,6 +201,15 @@
     right: initial;
     bottom: 8px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 268px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 34px;
+    bottom: -24px;
+    text-align: center;
+  }
 }
 
 .reviews__blockquote-title {
@@ -176,6 +229,15 @@
     height: 1px;
     background-color: $color-button-general;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+
+    &::after {
+      left: 35%;
+    }
+  }
 }
 
 .reviews__blockquote-text {
@@ -183,15 +245,27 @@
   font-size: 14px;
   margin-bottom: 35px;
   color: rgba($color-text-general, 0.7);
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__author {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .reviews__photo-author {
   margin-right: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__blockquote-author {

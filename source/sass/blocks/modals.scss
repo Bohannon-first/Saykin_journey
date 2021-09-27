@@ -57,6 +57,13 @@
   background-repeat: no-repeat;
   background-position: left center;
   min-height: 444px;
+
+  @media (max-width: $mobile-width) {
+    width: $mobile-width;
+    background-image: none;
+    justify-content: initial;
+    // justify-content: flex-start;
+  }
 }
 
 .modal__form-buy {
@@ -64,6 +71,10 @@
   flex-direction: column;
   align-items: center;
   width: 390px;
+
+  // @media (max-width: $mobile-width) {
+  //   width: $mobile-width;
+  // }
 }
 
 .modal__form-buy-text {
@@ -106,8 +117,18 @@
   transform: translate(-50%, -50%);
   width: 728px;
   box-sizing: border-box;
+
+  // @media (max-width: $tablet-width) {
+  //   left: 41%;
+  // }
+
+  // @media (max-width: $mobile-width) {
+  //   width: $mobile-width;
+  //   // left: 0;
+  //   transform: initial;
+  // }
 }
 
-.modal-show {
+.modal--show {
   display: flex;
 }
