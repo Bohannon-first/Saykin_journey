@@ -25,11 +25,13 @@
   margin: 0;
   border-bottom: 1px solid rgba($color-text-general, 0.3);
   margin-bottom: 65px;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
     padding-left: 21px;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
@@ -66,12 +68,6 @@
 
     &:not(:last-child) {
       margin-right: 70px;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
-    &:not(:last-child) {
-      margin-right: 95px;
     }
   }
 }

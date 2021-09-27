@@ -3,13 +3,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 444px;
+  width: 728px;
+  min-height: 444px;
+
+  @media (max-width: $mobile-width) {
+    width: $mobile-width;
+    min-height: 368px;
+    padding: 0 16px;
+  }
 }
 
 .modal__text-send {
   font-size: 25px;
   line-height: 42px;
   text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 19px;
+    line-height: 32px;
+  }
 }
 
 .modal__button-close {
@@ -56,13 +68,16 @@
   background-image: url("../../img/background/desktop/bgc-modal-buy.jpg");
   background-repeat: no-repeat;
   background-position: left center;
+  width: 728px;
   min-height: 444px;
 
   @media (max-width: $mobile-width) {
     width: $mobile-width;
+    min-height: 568px;
     background-image: none;
     justify-content: initial;
-    // justify-content: flex-start;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 }
 
@@ -71,10 +86,6 @@
   flex-direction: column;
   align-items: center;
   width: 390px;
-
-  // @media (max-width: $mobile-width) {
-  //   width: $mobile-width;
-  // }
 }
 
 .modal__form-buy-text {
@@ -95,6 +106,10 @@
   padding: 15px;
   margin-bottom: 20px;
   box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .modal__input::placeholder {
@@ -104,6 +119,10 @@
 .modal__button-buy {
   width: 176px;
   padding: 18px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 // Общий класс modal
@@ -115,18 +134,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 728px;
   box-sizing: border-box;
-
-  // @media (max-width: $tablet-width) {
-  //   left: 41%;
-  // }
-
-  // @media (max-width: $mobile-width) {
-  //   width: $mobile-width;
-  //   // left: 0;
-  //   transform: initial;
-  // }
 }
 
 .modal--show {
