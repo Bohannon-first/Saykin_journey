@@ -1,5 +1,105 @@
 .main-nav {
   min-width: 493px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 72px;
+    min-height: inherit;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 50px;
+  }
+}
+
+.main-nav__toggle-container {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    width: 72px;
+    min-height: inherit;
+    background-color: $color-button-general;
+  }
+}
+
+// Кнопка главного меню на мобильнике и планшете
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 25px;
+    z-index: 2;
+    width: 22px;
+    height: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+// Кнопка-бургер
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-white;
+  box-shadow: 0 5px 0 0 $color-white, 0 10px 0 0 $color-white;
+}
+
+.main-nav--closed .main-nav__item {
+  @media (max-width: 1169px) {
+    display: none;
+  }
+
+  // Скрыть кнопку-бургер при неработающем js
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  // Показать меню при неработающем js
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
+
+// Кнопка-крестик закрытия бургерного меню
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -4px;
+      width: 32px;
+      height: 1px;
+      background-color: rgba($color-text-secondary, 0.2);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: rgba($color-text-secondary, 1);
+    }
+  }
 }
 
 .main-nav__list {
@@ -10,10 +110,6 @@
   width: inherit;
   margin: 0;
   padding: 0;
-
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
 }
 
 .main-nav__link {
@@ -31,5 +127,48 @@
 
   &:hover {
     color: $color-button-general;
+  }
+}
+
+// Стилизация бургерного меню при открытии
+.main-nav--opened .main-nav__list {
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: initial;
+    width: $mobile-width;
+    min-height: 568px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $color-white;
+    padding-top: 134px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 30px $color-shadow-form;
+    z-index: 1;
+  }
+}
+
+.main-nav--opened .main-nav__item {
+  @media (max-width: $tablet-width) {
+    display: block;
+    background-color: $color-modal-send;
+    padding: 17px;
+    margin-bottom: 30px;
+    background-image: url("../../img/icons/icon-arrow-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+
+    &--phone {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__link {
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $color-menu-item;
   }
 }

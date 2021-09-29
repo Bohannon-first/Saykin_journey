@@ -19,6 +19,7 @@
 
 .page-header__logo-wrapper {
   @media (max-width: $tablet-width) {
+    min-height: inherit;
     padding: 10px 20px;
     box-sizing: border-box;
   }
