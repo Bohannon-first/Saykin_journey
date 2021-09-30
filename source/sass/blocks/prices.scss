@@ -19,16 +19,16 @@
   @media (max-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    width: $tablet-width;
-    padding: 0 21px;
+    width: 726px;
+    // padding: 0 21px;
     box-sizing: border-box;
   }
 
   @media (max-width: $mobile-width) {
-    width: $mobile-width;
+    width: 288px;
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
+    // padding: 0 16px;
   }
 }
 

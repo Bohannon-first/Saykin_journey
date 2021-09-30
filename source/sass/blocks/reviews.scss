@@ -4,12 +4,12 @@
   width: 1170px;
 
   @media (max-width: $tablet-width) {
-    width: $tablet-width;
+    width: 768px;
     margin-bottom: 80px;
   }
 
   @media (max-width: $mobile-width) {
-    width: $mobile-width;
+    width: 320px;
     margin-bottom: 40px;
   }
 }
@@ -22,7 +22,7 @@
   width: 901px;
   padding: 0;
   padding-bottom: 15px;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 1px solid rgba($color-text-general, 0.3);
   margin-bottom: 65px;
   box-sizing: border-box;
@@ -39,6 +39,7 @@
     padding: 0 16px;
     border-bottom: 0;
     margin-bottom: 39px;
+    width: 100%;
 
     &::after {
       position: absolute;
@@ -80,8 +81,16 @@
 
 .reviews__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .reviews__list-item {

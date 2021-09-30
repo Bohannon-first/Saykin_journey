@@ -6,27 +6,16 @@
   margin: 0 auto;
   width: 1170px;
   background-color: $color-white;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     min-height: 50px;
-    width: $tablet-width;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: $mobile-width;
-  }
-}
-
-.page-header__logo-wrapper {
-  @media (max-width: $tablet-width) {
-    min-height: inherit;
-    padding: 10px 20px;
-    box-sizing: border-box;
+    width: 100%;
+    padding-left: 21px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 16px;
-    padding-right: 16px;
   }
 }
 

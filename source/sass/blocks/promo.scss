@@ -1,7 +1,8 @@
 .promo {
   background-image: url("../../img/background/desktop/bgc-promo-desktop.jpg");
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
+  // background-color: $color-bgc-promo;
   background-size: 100% auto;
   min-height: 860px;
   margin-bottom: 200px;
@@ -13,7 +14,7 @@
 
   @media (max-width: $tablet-width) {
     background-image: url("../../img/background/tablet/bgc-promo-tablet.jpg");
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
     min-height: 344px;
@@ -42,23 +43,22 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   padding-top: 185px;
+  padding-right: 85px;
   margin: 0 auto;
-  padding-right: 140px;
   width: 1170px;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    width: $tablet-width;
+    width: 726px;
     padding: 0;
-    margin: 0;
     align-items: center;
   }
 
   @media (max-width: $mobile-width) {
-    width: $mobile-width;
+    width: 288px;
     min-height: inherit;
-    padding: 0 16px;
-    box-sizing: border-box;
   }
 }
 
@@ -68,8 +68,9 @@
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
-  margin-left: auto;
-  margin-bottom: 20px;
+  // margin-left: auto;
+  // margin-right: 86px;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;
@@ -94,8 +95,9 @@
 .promo__description {
   margin: 0;
   color: $color-white;
-  margin-left: auto;
-  margin-right: 33px;
+  // margin-left: auto;
+  // margin-right: 117px;
+  margin-right: 31px;
   margin-bottom: 39px;
 
   @media (max-width: $tablet-width) {
@@ -122,8 +124,7 @@
   padding-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-left: auto;
-  margin-right: 50px;
+  margin-right: 48px;
 
   @media (max-width: $tablet-width) {
     width: 250px;
@@ -136,7 +137,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    // margin-top: auto;
     width: 100%;
   }
 }
