@@ -34,9 +34,13 @@
     min-height: 433px;
   }
 
+  @media (max-width: 319px) {
+    width: 320px;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/background/mobile/bgc-promo-mobile@2x.jpg");
-    background-size: 640px;
+    background-size: 640px auto;
   }
 }
 
@@ -68,8 +72,6 @@
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
-  // margin-left: auto;
-  // margin-right: 86px;
   margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
@@ -95,8 +97,6 @@
 .promo__description {
   margin: 0;
   color: $color-white;
-  // margin-left: auto;
-  // margin-right: 117px;
   margin-right: 31px;
   margin-bottom: 39px;
 

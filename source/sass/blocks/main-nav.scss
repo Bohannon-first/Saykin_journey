@@ -50,8 +50,8 @@
   box-shadow: 0 5px 0 0 $color-white, 0 10px 0 0 $color-white;
 }
 
-.main-nav--closed .main-nav__item {
-  @media (max-width: 1169px) {
+.main-nav--closed .main-nav__list {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 
@@ -61,8 +61,8 @@
   }
 
   // Показать меню при неработающем js
-  .main-nav--nojs .main-nav__item {
-    display: block;
+  .main-nav--nojs .main-nav__list {
+    display: flex;
   }
 }
 
@@ -110,6 +110,41 @@
   width: inherit;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: initial;
+    width: 320px;
+    min-height: 568px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $color-white;
+    padding-top: 134px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 30px $color-shadow-form;
+    z-index: 1;
+  }
+
+  @media (max-width: 319px) {
+    width: 100%;
+  }
+}
+
+.main-nav__item {
+  @media (max-width: $tablet-width) {
+    display: block;
+    background-color: $color-modal-send;
+    padding: 17px;
+    margin-bottom: 30px;
+    background-image: url("../../img/icons/icon-arrow-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+
+    &--phone {
+      display: none;
+    }
+  }
 }
 
 .main-nav__link {
@@ -128,43 +163,7 @@
   &:hover {
     color: $color-button-general;
   }
-}
 
-// Стилизация бургерного меню при открытии
-.main-nav--opened .main-nav__list {
-  @media (max-width: $tablet-width) {
-    flex-direction: column;
-    justify-content: initial;
-    width: $mobile-width;
-    min-height: 568px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $color-white;
-    padding-top: 134px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 30px $color-shadow-form;
-    z-index: 1;
-  }
-}
-
-.main-nav--opened .main-nav__item {
-  @media (max-width: $tablet-width) {
-    display: block;
-    background-color: $color-modal-send;
-    padding: 17px;
-    margin-bottom: 30px;
-    background-image: url("../../img/icons/icon-arrow-menu.svg");
-    background-repeat: no-repeat;
-    background-position: 92% 50%;
-
-    &--phone {
-      display: none;
-    }
-  }
-}
-
-.main-nav--opened .main-nav__link {
   @media (max-width: $tablet-width) {
     font-size: 20px;
     line-height: 28px;
