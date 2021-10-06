@@ -18,19 +18,8 @@
   <header class="page-header">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo" aria-label="Логотип Way">
-        <svg width="58" height="22" viewBox="0 0 58 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M27.7339 0L22.0582 17.0732H17.7457L13.9289 5.51219L9.98817 17.0732H5.70045L0 0H4.1638L8.07976 12L12.1692 0H15.8869L19.8524 12.0976L23.8923 0H27.7339Z"
-            fill="#141517" />
-          <path
-            d="M34.0886 3.7561C36.154 3.7561 37.7402 4.2439 38.8473 5.21951C39.9543 6.17886 40.5078 7.63414 40.5078 9.58536V17.0732H36.8893V15.439C36.1623 16.6585 34.8074 17.2683 32.8246 17.2683C31.8002 17.2683 30.9079 17.0976 30.1479 16.7561C29.4043 16.4146 28.8343 15.9431 28.4378 15.3415C28.0412 14.7398 27.8429 14.0569 27.8429 13.2927C27.8429 12.0732 28.3056 11.1138 29.2309 10.4146C30.1727 9.71545 31.6184 9.36585 33.5681 9.36585H36.6414C36.6414 8.53658 36.3853 7.90244 35.8731 7.46342C35.3609 7.00813 34.5926 6.78049 33.5681 6.78049C32.8577 6.78049 32.1554 6.89431 31.4615 7.12195C30.784 7.33333 30.2057 7.62602 29.7265 8L28.3386 5.34146C29.0656 4.8374 29.9331 4.44715 30.941 4.17073C31.9654 3.89431 33.0146 3.7561 34.0886 3.7561ZM33.7912 14.7073C34.4521 14.7073 35.0387 14.561 35.5509 14.2683C36.0631 13.9593 36.4266 13.5122 36.6414 12.9268V11.5854H33.9895C32.4033 11.5854 31.6102 12.0976 31.6102 13.122C31.6102 13.6098 31.8002 14 32.1802 14.2927C32.5768 14.5691 33.1138 14.7073 33.7912 14.7073Z"
-            fill="#141517" />
-          <path
-            d="M57 3.95122L50.9774 17.878C50.366 19.3902 49.6059 20.4553 48.6972 21.0732C47.8049 21.6911 46.7227 22 45.4504 22C44.7564 22 44.0707 21.8943 43.3933 21.6829C42.7158 21.4715 42.1623 21.1789 41.7327 20.8049L43.1454 18.0976C43.4429 18.3577 43.7816 18.561 44.1616 18.7073C44.5582 18.8537 44.9465 18.9268 45.3265 18.9268C45.8552 18.9268 46.2848 18.7967 46.6153 18.5366C46.9457 18.2927 47.2432 17.878 47.5075 17.2927L47.5571 17.1707L41.7823 3.95122H45.7726L49.5151 12.8537L53.2823 3.95122H57Z"
-            fill="#141517" />
-          <path
-            d="M57.0173 3.9502L50.9946 17.877C50.3833 19.3892 49.6232 20.4543 48.7145 21.0721C47.8222 21.69 46.74 21.999 45.4677 21.999C44.7737 21.999 44.088 21.8933 43.4106 21.6819C42.7331 21.4705 42.1796 21.1778 41.75 20.8039L43.1627 18.0965C43.4601 18.3567 43.7989 18.5599 44.1789 18.7063C44.5754 18.8526 44.9637 18.9258 45.3438 18.9258C45.8725 18.9258 46.3021 18.7957 46.6326 18.5356C46.963 18.2917 47.2604 17.877 47.5248 17.2917L47.5744 17.1697L49.5323 12.8526L53.2996 3.9502H57.0173Z"
-            fill="#FE7865" />
+        <svg class="page-header__logo-svg" width="57" height="22">
+          <use xlink:href="img/sprite.svg#logo-header"></use>
         </svg>
       </a>
     </div>
@@ -49,8 +38,11 @@
         </li>
         <li class="main-nav__item main-nav__item--phone">
           <a class="main-nav__link main-nav__link--phone" href="tel:+749978468446"
-            aria-label="Наш контактный телефон +7 (499) -784-684-46">+7
-            (499)-784-684-46</a>
+            aria-label="Наш контактный телефон +7 (499) -784-684-46">
+            <svg class="main-nav__link-svg-phone" width="17" height="24">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            +7(499)-784-684-46</a>
         </li>
       </ul>
     </nav>
@@ -77,6 +69,11 @@
           <li class="countries__item">
             <a class="countries__link" href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 1169px)"
+                  srcset="img/content/tablet/greece-tablet.webp 1x, img/content/tablet/greece-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/desktop/greece-desktop.webp 1x, img/content/desktop/greece-desktop@2x.webp 2x">
+
                 <source media="(max-width: 1169px)"
                   srcset="img/content/tablet/greece-tablet.jpg 1x, img/content/tablet/greece-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/content/desktop/greece-desktop.jpg"
@@ -90,6 +87,11 @@
           <li class="countries__item">
             <a class="countries__link" href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 1169px)"
+                  srcset="img/content/tablet/albania-tablet.webp 1x, img/content/tablet/albania-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/desktop/albania-desktop.webp 1x, img/content/desktop/albania-desktop@2x.webp 2x">
+
                 <source media="(max-width: 1169px)"
                   srcset="img/content/tablet/albania-tablet.jpg 1x, img/content/tablet/albania-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/content/desktop/albania-desktop.jpg"
@@ -102,6 +104,11 @@
           <li class="countries__item">
             <a class="countries__link" href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 1169px)"
+                  srcset="img/content/tablet/macedonia-tablet.webp 1x, img/content/tablet/macedonia-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/desktop/macedonia-desktop.webp 1x, img/content/desktop/macedonia-desktop@2x.webp 2x">
+
                 <source media="(max-width: 1169px)"
                   srcset="img/content/tablet/macedonia-tablet.jpg 1x, img/content/tablet/macedonia-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/content/desktop/macedonia-desktop.jpg"
@@ -114,6 +121,11 @@
           <li class="countries__item">
             <a class="countries__link" href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 1169px)"
+                  srcset="img/content/tablet/montenegro-tablet.webp 1x, img/content/tablet/montenegro-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/desktop/montenegro-desktop.webp 1x, img/content/desktop/montenegro-desktop@2x.webp 2x">
+
                 <source media="(max-width: 1169px)"
                   srcset="img/content/tablet/montenegro-tablet.jpg 1x, img/content/tablet/montenegro-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/content/desktop/montenegro-desktop.jpg"
@@ -126,6 +138,11 @@
           <li class="countries__item">
             <a class="countries__link" href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 1169px)"
+                  srcset="img/content/tablet/croatia-tablet.webp 1x, img/content/tablet/croatia-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/desktop/croatia-desktop.webp 1x, img/content/desktop/croatia-desktop@2x.webp 2x">
+
                 <source media="(max-width: 1169px)"
                   srcset="img/content/tablet/croatia-tablet.jpg 1x, img/content/tablet/croatia-tablet@2x.jpg 2x">
                 <img class="countries__img" src="img/content/desktop/croatia-desktop.jpg"
@@ -157,6 +174,13 @@
             600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
           <button class="reviews__button button">Купить тур сейчас</button>
           <picture class="reviews__img">
+            <source media="(max-width: 767px)"
+              srcset="img/content/mobile/greece-reviews-mobile.webp 1x, img/content/mobile/greece-reviews-mobile@2x.webp 2x">
+            <source media="(max-width: 1169px)"
+              srcset="img/content/tablet/greece-reviews-tablet.webp 1x, img/content/tablet/greece-reviews-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/desktop/greece-desktop430x596.webp 1x, img/content/desktop/greece-desktop430x596@2x.webp 2x">
+
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/greece-reviews-mobile.jpg 1x, img/content/mobile/greece-reviews-mobile@2x.jpg 2x">
             <source media="(max-width: 1169px)"
@@ -190,6 +214,13 @@
           <button class="reviews__button button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
+              srcset="img/content/mobile/albania-reviews-mobile.webp 1x, img/content/mobile/albania-reviews-mobile@2x.webp 2x">
+            <source media="(max-width: 1169px)"
+              srcset="img/content/tablet/albania-reviews-tablet.webp 1x, img/content/tablet/albania-reviews-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/desktop/albania-desktop430x596.webp 1x, img/content/desktop/albania-desktop430x596@2x.webp 2x">
+
+            <source media="(max-width: 767px)"
               srcset="img/content/mobile/albania-reviews-mobile.jpg 1x, img/content/mobile/albania-reviews-mobile@2x.jpg 2x">
             <source media="(max-width: 1169px)"
               srcset="img/content/tablet/albania-reviews-tablet.jpg 1x, img/content/tablet/albania-reviews-tablet@2x.jpg 2x">
@@ -219,6 +250,13 @@
             где находится археологический памятник Кокино в длину около 100 метров.</p>
           <button class="reviews__button button">Купить тур сейчас</button>
           <picture class="reviews__img">
+            <source media="(max-width: 767px)"
+              srcset="img/content/mobile/macedonia-reviews-mobile.webp 1x, img/content/mobile/macedonia-reviews-mobile@2x.webp 2x">
+            <source media="(max-width: 1169px)"
+              srcset="img/content/tablet/macedonia-reviews-tablet.webp 1x, img/content/tablet/macedonia-reviews-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/desktop/macedonia-desktop430x596.webp 1x, img/content/desktop/macedonia-desktop430x596@2x.webp 2x">
+
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/macedonia-reviews-mobile.jpg 1x, img/content/mobile/macedonia-reviews-mobile@2x.jpg 2x">
             <source media="(max-width: 1169px)"
@@ -250,6 +288,13 @@
           <button class="reviews__button button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
+              srcset="img/content/mobile/montenegro-reviews-mobile.webp 1x, img/content/mobile/montenegro-reviews-mobile@2x.webp 2x">
+            <source media="(max-width: 1169px)"
+              srcset="img/content/tablet/montenegro-reviews-tablet.webp 1x, img/content/tablet/montenegro-reviews-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/desktop/montenegro-desktop430x596.webp 1x, img/content/desktop/montenegro-desktop430x596@2x.webp 2x">
+
+            <source media="(max-width: 767px)"
               srcset="img/content/mobile/montenegro-reviews-mobile.jpg 1x, img/content/mobile/montenegro-reviews-mobile@2x.jpg 2x">
             <source media="(max-width: 1169px)"
               srcset="img/content/tablet/montenegro-reviews-tablet.jpg 1x, img/content/tablet/montenegro-reviews-tablet@2x.jpg 2x">
@@ -278,6 +323,13 @@
             сталагмитами — формировавшимися тысячи и тысячи лет.</p>
           <button class="reviews__button button">Купить тур сейчас</button>
           <picture class="reviews__img">
+            <source media="(max-width: 767px)"
+              srcset="img/content/mobile/croatia-reviews-mobile.webp 1x, img/content/mobile/croatia-reviews-mobile@2x.webp 2x">
+            <source media="(max-width: 1169px)"
+              srcset="img/content/tablet/croatia-reviews-tablet.webp 1x, img/content/tablet/croatia-reviews-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/desktop/croatia-desktop430x596.webp 1x, img/content/desktop/croatia-desktop430x596@2x.webp 2x">
+
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/croatia-reviews-mobile.jpg 1x, img/content/mobile/croatia-reviews-mobile@2x.jpg 2x">
             <source media="(max-width: 1169px)"
@@ -310,27 +362,70 @@
         <div class="prices__item prices__item--complex">
           <h3 class="prices__title prices__title--complex">Комплексный <span class="prices__title-cost">$1999</span>
           </h3>
-          <p class="prices__text prices__text--complex">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+          <p class="prices__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__price-list">
-            <li class="prices__price-item prices__price-item--complex">Разработанный маршрут с гидом группы</li>
-            <li class="prices__price-item prices__price-item--complex">Перелет, трансфер и проживание в отелях</li>
-            <li class="prices__price-item prices__price-item--complex">Завтраки, ужины в отелях и ланчи на природе</li>
-            <li class="prices__price-item prices__price-item--complex">Экскурсии по удивительно красивым местам Европы
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Перелет, трансфер и проживание в отелях
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Завтраки, ужины в отелях и ланчи на природе
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
           <button class="prices__button button">Купить тур сейчас</button>
         </div>
-        <div class="prices__item prices__item--econom">
-          <h3 class="prices__title prices__title--econom">Экономный
+        <div class="prices__item prices__item--economy">
+          <h3 class="prices__title prices__title--economy">Экономный
             <span class="prices__title-cost">$1399</span>
           </h3>
-          <p class="prices__text prices__text--econom">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+          <p class="prices__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
           <ul class="prices__price-list">
-            <li class="prices__price-item prices__price-item--econom">Разработанный маршрут с гидом группы</li>
-            <li class="prices__price-item prices__price-item--econom">Перелет и трансфер</li>
-            <li class="prices__price-item prices__price-item--econom">Проживание в хостелах при отелях</li>
-            <li class="prices__price-item prices__price-item--econom">Только завтраки в отелях</li>
-            <li class="prices__price-item prices__price-item--econom">Экскурсии по удивительно красивым местам Европы
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Разработанный маршрут с гидом группы
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Перелет и трансфер
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Проживание в хостелах при отелях
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Только завтраки в отелях
+            </li>
+            <li class="prices__price-item">
+              <svg class="prices__price-item-svg-check" width="14" height="12">
+                <use xlink:href="img/sprite.svg#icon-check-black"></use>
+              </svg>
+              Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
           <button class="prices__button button">Купить тур сейчас</button>

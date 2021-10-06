@@ -34,13 +34,13 @@
     min-height: 433px;
   }
 
-  @media (max-width: 319px) {
-    width: 320px;
-  }
-
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/background/mobile/bgc-promo-mobile@2x.jpg");
-    background-size: 640px auto;
+    background-size: 100% auto;
+  }
+
+  @media (max-width: 319px) {
+    width: 320px;
   }
 }
 
@@ -125,6 +125,10 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-right: 48px;
+  background-image: url('../../img/icons/icon-arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 85% center;
 
   @media (max-width: $tablet-width) {
     width: 250px;

@@ -148,6 +148,7 @@
 }
 
 .main-nav__link {
+  position: relative;
   color: $color-text-secondary;
   font-size: 14px;
   line-height: 17px;
@@ -162,6 +163,10 @@
 
   &:hover {
     color: $color-button-general;
+
+    .main-nav__link-svg-phone {
+      stroke: $color-button-general;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -170,4 +175,12 @@
     font-weight: 600;
     color: $color-menu-item;
   }
+}
+
+.main-nav__link-svg-phone {
+  position: absolute;
+  top: 0;
+  left: -28px;
+  stroke: $color-text-secondary;
+  fill: $color-white;
 }
