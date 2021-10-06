@@ -70,22 +70,22 @@
     @media (max-width: $mobile-width) {
       margin-left: 0;
     }
+  }
 
-    &:hover {
-      border-color: $color-button-general;
+  &--complex:hover,
+  &--economy:hover {
+    border-color: $color-button-general;
 
-      .prices__title {
-        color: $color-button-general;
-      }
+    .prices__title {
+      color: $color-button-general;
+    }
 
-      .prices__text::after,
-      .prices__text::after {
-        background-color: $color-button-general;
-      }
+    .prices__text::after {
+      background-color: $color-button-general;
+    }
 
-      .prices__price-item-svg-check {
-        fill: $color-button-general;
-      }
+    .prices__price-item-svg-check {
+      fill: $color-button-general;
     }
   }
 

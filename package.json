@@ -6,7 +6,6 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "eslint": "^7.32.0",
     "eslint-config-htmlacademy": "^4.0.2",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
@@ -28,7 +27,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
