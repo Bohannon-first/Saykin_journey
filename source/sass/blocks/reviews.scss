@@ -16,10 +16,9 @@
 
 .reviews__list-countries {
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
-  width: 901px;
+  width: 902px;
   padding: 0;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba($color-text-general, 0.3);
@@ -58,15 +57,19 @@
   font-weight: 500;
   color: rgba($color-text-general, 0.3);
 
-  &:not(:last-child) {
+  &:not(:nth-child(5n)) {
     margin-right: 95px;
+  }
+
+  &--current {
+    color: $color-button-general;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 17px;
     line-height: 21px;
 
-    &:not(:last-child) {
+    &:not(:nth-child(5n)) {
       margin-right: 70px;
     }
   }
@@ -164,10 +167,10 @@
 
 .reviews__button {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
   width: 250px;
   padding: 30px;
   margin-top: auto;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 30px;

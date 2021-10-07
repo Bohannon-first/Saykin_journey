@@ -7,7 +7,7 @@
   min-height: 444px;
 
   @media (max-width: $mobile-width) {
-    width: $mobile-width;
+    width: 288px;
     min-height: 368px;
     padding: 0 16px;
   }
@@ -19,7 +19,7 @@
   text-align: center;
 
   @media (max-width: $mobile-width) {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 32px;
   }
 }
@@ -72,7 +72,7 @@
   min-height: 444px;
 
   @media (max-width: $mobile-width) {
-    width: $mobile-width;
+    width: 320px;
     min-height: 568px;
     background-image: none;
     justify-content: initial;
@@ -86,6 +86,10 @@
   flex-direction: column;
   align-items: center;
   width: 390px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .modal__form-buy-text {
