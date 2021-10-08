@@ -50,8 +50,8 @@
 
   <main class="page-main">
     <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Путешествие<br> по Европе</h1>
+      <h1 class="promo__title">Путешествие<br> по Европе</h1>
+      <div class="promo__content">
         <p class="promo__description">В этом туре вы откроете для себя Европу в<br> новом свете. Вас ждет: море, горы, а
           также<br>
           потрясающая красота
@@ -178,7 +178,7 @@
             Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
             путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
             600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-          <button class="reviews__button button">Купить тур сейчас</button>
+          <button class="reviews__button button" type="button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/greece-reviews-mobile.webp 1x, img/content/mobile/greece-reviews-mobile@2x.webp 2x">
@@ -217,7 +217,7 @@
             кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
             присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
           </p>
-          <button class="reviews__button button">Купить тур сейчас</button>
+          <button class="reviews__button button" type="button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/albania-reviews-mobile.webp 1x, img/content/mobile/albania-reviews-mobile@2x.webp 2x">
@@ -254,7 +254,7 @@
             удивительно красивой лесистой
             местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
             где находится археологический памятник Кокино в длину около 100 метров.</p>
-          <button class="reviews__button button">Купить тур сейчас</button>
+          <button class="reviews__button button" type="button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/macedonia-reviews-mobile.webp 1x, img/content/mobile/macedonia-reviews-mobile@2x.webp 2x">
@@ -291,7 +291,7 @@
           <p class="reviews__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
             некоторых местах высотой берегов
             доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-          <button class="reviews__button button">Купить тур сейчас</button>
+          <button class="reviews__button button" type="button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/montenegro-reviews-mobile.webp 1x, img/content/mobile/montenegro-reviews-mobile@2x.webp 2x">
@@ -327,7 +327,7 @@
             увлечет вас на 80-ти метровую
             глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
             сталагмитами — формировавшимися тысячи и тысячи лет.</p>
-          <button class="reviews__button button">Купить тур сейчас</button>
+          <button class="reviews__button button" type="button">Купить тур сейчас</button>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/croatia-reviews-mobile.webp 1x, img/content/mobile/croatia-reviews-mobile@2x.webp 2x">
@@ -395,7 +395,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="prices__button button">Купить тур сейчас</button>
+          <button class="prices__button button" type="button">Купить тур сейчас</button>
         </div>
         <div class="prices__item prices__item--economy">
           <h3 class="prices__title prices__title--economy">Экономный
@@ -434,7 +434,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="prices__button button">Купить тур сейчас</button>
+          <button class="prices__button button" type="button">Купить тур сейчас</button>
         </div>
         <div class="prices__item prices__item--description">
           <h2 class="prices__title prices__title--main">Цены</h2>
@@ -455,9 +455,12 @@
         <h3 class="feedback__title">У Вас остались вопросы?</h3>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <div class="feedback__wrapper-input">
-          <input class="feedback__input feedback__input--phone" type="tel" name="phone"
+          <label class="visually-hidden" for="phone">Введите свой номер телефона</label>
+          <input class="feedback__input feedback__input--phone" type="tel" id="phone" name="phone"
             placeholder="* +7 Введите 10 цифр номера">
-          <input class="feedback__input feedback__input--email" type="email" name="email" placeholder="E-mail">
+          <label class="visually-hidden" for="e-mail">Введите свой email</label>
+          <input class="feedback__input feedback__input--email" type="email" id="e-mail" name="email"
+            placeholder="E-mail">
         </div>
         <button class="feedback__button-send button" type="submit">Отправить</button>
       </form>
@@ -513,8 +516,11 @@
   <section class="modal modal--buy">
     <form class="modal__form-buy" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal__form-buy-text">Купить тур</p>
-      <input class="modal__input modal__input--tel" type="tel" name="tel" placeholder="* +7 Введите 10 цифр номера">
-      <input class="modal__input modal__input--email" type="email" name="email" placeholder="E-mail">
+      <label class="visually-hidden" for="tel">Введите свой номер телефона</label>
+      <input class="modal__input modal__input--tel" type="tel" id="tel" name="tel"
+        placeholder="* +7 Введите 10 цифр номера">
+      <label class="visually-hidden" for="email">Введите свой email</label>
+      <input class="modal__input modal__input--email" type="email" id="email" name="email" placeholder="E-mail">
       <button class="modal__button-buy button" type="submit">Отправить</button>
     </form>
     <button class="modal__button-close" type="button" aria-label="Закрыть"></button>
