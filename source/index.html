@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект Путешествие по Европе</title>
-  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Regular.woff2" as="font">
-  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Medium.woff2" as="font">
-  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-SemiBold.woff2" as="font">
-  <link rel="preload" crossorigin="anonymous" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/montserrat-medium.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/montserrat-semibold.woff2" as="font">
+  <link rel="preload" crossorigin="anonymous" href="fonts/montserrat-bold.woff2" as="font">
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -60,8 +60,7 @@
       </div>
     </section>
 
-    <section class="countries">
-      <a name="catalog"></a>
+    <section class="countries" id="catalog">
       <div class="countries__wrapper">
         <h2 class="countries__title">Места<br> посещения</h2>
         <p class="countries__description">Вы можете выбрать полный тур или<br> частичный, с посещением первых 3 мест
@@ -178,7 +177,7 @@
             Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
             путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
             600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-          <button class="reviews__button button" type="button">Купить тур сейчас</button>
+          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/greece-reviews-mobile.webp 1x, img/content/mobile/greece-reviews-mobile@2x.webp 2x">
@@ -217,7 +216,7 @@
             кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
             присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
           </p>
-          <button class="reviews__button button" type="button">Купить тур сейчас</button>
+          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/albania-reviews-mobile.webp 1x, img/content/mobile/albania-reviews-mobile@2x.webp 2x">
@@ -254,7 +253,7 @@
             удивительно красивой лесистой
             местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
             где находится археологический памятник Кокино в длину около 100 метров.</p>
-          <button class="reviews__button button" type="button">Купить тур сейчас</button>
+          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/macedonia-reviews-mobile.webp 1x, img/content/mobile/macedonia-reviews-mobile@2x.webp 2x">
@@ -290,8 +289,8 @@
           <h2 class="reviews__title">Черногория</h2>
           <p class="reviews__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
             некоторых местах высотой берегов
-            доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-          <button class="reviews__button button" type="button">Купить тур сейчас</button>
+            доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/montenegro-reviews-mobile.webp 1x, img/content/mobile/montenegro-reviews-mobile@2x.webp 2x">
@@ -327,7 +326,7 @@
             увлечет вас на 80-ти метровую
             глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
             сталагмитами — формировавшимися тысячи и тысячи лет.</p>
-          <button class="reviews__button button" type="button">Купить тур сейчас</button>
+          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/croatia-reviews-mobile.webp 1x, img/content/mobile/croatia-reviews-mobile@2x.webp 2x">
@@ -362,8 +361,7 @@
       </ul>
     </section>
 
-    <section class="prices">
-      <a name="prices"></a>
+    <section class="prices" id="prices">
       <div class="prices__wrapper">
         <div class="prices__item prices__item--complex">
           <h3 class="prices__title prices__title--complex">Комплексный <span class="prices__title-cost">$1999</span>
@@ -395,7 +393,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="prices__button button" type="button">Купить тур сейчас</button>
+          <a class="prices__button button" href="#feedback">Купить тур сейчас</a>
         </div>
         <div class="prices__item prices__item--economy">
           <h3 class="prices__title prices__title--economy">Экономный
@@ -434,7 +432,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <button class="prices__button button" type="button">Купить тур сейчас</button>
+          <a class="prices__button button" href="#feedback">Купить тур сейчас</a>
         </div>
         <div class="prices__item prices__item--description">
           <h2 class="prices__title prices__title--main">Цены</h2>
@@ -450,14 +448,14 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="feedback__title">У Вас остались вопросы?</h3>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <div class="feedback__wrapper-input">
           <label class="visually-hidden" for="phone">Введите свой номер телефона</label>
           <input class="feedback__input feedback__input--phone" type="tel" id="phone" name="phone"
-            placeholder="* +7 Введите 10 цифр номера">
+            placeholder="* +7  Введите 10 цифр номера">
           <label class="visually-hidden" for="e-mail">Введите свой email</label>
           <input class="feedback__input feedback__input--email" type="email" id="e-mail" name="email"
             placeholder="E-mail">

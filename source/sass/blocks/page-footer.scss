@@ -121,6 +121,10 @@
   padding-left: 65px;
   box-sizing: border-box;
 
+  @media (max-width: $tablet-width) {
+    padding-left: 81px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-left: 0;
     align-items: center;
@@ -173,7 +177,7 @@
   @media (max-width: $tablet-width) {
     position: relative;
     padding-left: 0;
-    margin-top: 50px;
+    margin-top: 45px;
     width: 100%;
     text-align: center;
 
@@ -190,6 +194,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-top: 57px;
+
     &::before {
       width: 288px;
     }

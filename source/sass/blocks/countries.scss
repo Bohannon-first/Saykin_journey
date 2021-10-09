@@ -1,8 +1,12 @@
 .countries {
-  margin-bottom: 95px;
+  margin-bottom: 33px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 

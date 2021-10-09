@@ -19,6 +19,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 768px;
+    background-color: $color-bgc-feedback;
     min-height: 455px;
     margin-bottom: 80px;
     padding: 70px 55px 74px;
@@ -32,8 +33,10 @@
 
   @media (max-width: $mobile-width) {
     background-image: none;
+    background-color: initial;
     width: 320px;
     padding: 0;
+    margin-bottom: 46px;
   }
 }
 
@@ -101,6 +104,10 @@
   margin-bottom: 25px;
   box-sizing: border-box;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
     width: 100%;
@@ -109,6 +116,7 @@
 
 .feedback__input::placeholder {
   color: $color-text-secondary;
+  opacity: 1;
 }
 
 .feedback__button-send {
