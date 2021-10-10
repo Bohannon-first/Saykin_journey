@@ -172,6 +172,10 @@
   &:hover {
     background-color: $color-white;
   }
+
+  &:active {
+    background-color: $color-black;
+  }
 }
 
 .countries__link {
@@ -187,5 +191,9 @@
 
   &:hover {
     color: $color-black;
+  }
+
+  &:active {
+    color: $color-white;
   }
 }
