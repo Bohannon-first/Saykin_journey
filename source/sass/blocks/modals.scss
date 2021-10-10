@@ -58,6 +58,10 @@
   &:hover::before {
     background-color: rgba($color-text-secondary, 1);
   }
+
+  @media (max-width: $mobile-width) {
+    right: 25px;
+  }
 }
 
 // Стили модалки о покупке тура
@@ -76,7 +80,10 @@
     min-height: 568px;
     background-image: none;
     justify-content: initial;
+    align-items: initial;
     padding: 0 16px;
+    padding-top: 101px;
+    padding-bottom: 101px;
     box-sizing: border-box;
   }
 }
@@ -98,7 +105,11 @@
   font-weight: 600;
   color: $color-menu-item;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .modal__input {
