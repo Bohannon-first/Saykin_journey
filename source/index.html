@@ -62,7 +62,7 @@
           также<br>
           потрясающая красота
           природы.</p>
-        <a class="promo__link button" href="#">Смотреть тур</a>
+        <a class="promo__link button" href="#watch">Смотреть тур</a>
       </div>
     </section>
 
@@ -71,7 +71,7 @@
         <h2 class="countries__title">Места<br> посещения</h2>
         <p class="countries__description">Вы можете выбрать полный тур или<br> частичный, с посещением первых 3 мест
         </p>
-        <ul class="countries__list">
+        <ul class="countries__list" id="watch">
           <li class="countries__item">
             <picture>
               <source type="image/webp" media="(max-width: 1169px)"
@@ -183,7 +183,7 @@
             Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
             путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
             600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="reviews__button button button__buy" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/greece-reviews-mobile.webp 1x, img/content/mobile/greece-reviews-mobile@2x.webp 2x">
@@ -399,7 +399,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="prices__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="prices__button button button__buy" href="#feedback">Купить тур сейчас</a>
         </div>
         <div class="prices__item prices__item--economy">
           <h3 class="prices__title prices__title--economy">Экономный
@@ -438,7 +438,7 @@
               Экскурсии по удивительно красивым местам Европы
             </li>
           </ul>
-          <a class="prices__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="prices__button button button__buy" href="#feedback">Купить тур сейчас</a>
         </div>
         <div class="prices__item prices__item--description">
           <h2 class="prices__title prices__title--main">Цены</h2>
@@ -455,7 +455,7 @@
     </section>
 
     <section class="feedback" id="feedback">
-      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <h3 class="feedback__title">У Вас остались вопросы?</h3>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <div class="feedback__wrapper-input">
@@ -511,24 +511,32 @@
     </div>
   </footer>
 
+  <svg class="back-to-top__svg" width="50" height="50">
+    <use xlink:href="img/sprite.svg#icon-arrow-up"></use>
+  </svg>
+
   <section class="modal modal--send">
-    <p class="modal__text-send">Форма успешно отправлена,<br> спасибо! :)</p>
-    <button class="modal__button-close" type="button" aria-label="Закрыть">
-    </button>
+    <div class="modal__content modal__content--send">
+      <p class="modal__text-send">Форма успешно отправлена,<br> спасибо! :)</p>
+      <button class="modal__button-close" type="button" aria-label="Закрыть">
+      </button>
+    </div>
   </section>
 
   <section class="modal modal--buy">
-    <form class="modal__form-buy" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal__form-buy-text">Купить тур</p>
-      <label class="visually-hidden" for="tel">Введите свой номер телефона</label>
-      <input class="modal__input modal__input--tel" type="tel" id="tel" name="tel"
-        placeholder="* +7 Введите 10 цифр номера">
-      <label class="visually-hidden" for="email">Введите свой email</label>
-      <input class="modal__input modal__input--email" type="email" id="email" name="email" placeholder="E-mail">
-      <button class="modal__button-buy button" type="submit">Отправить</button>
-    </form>
-    <button class="modal__button-close" type="button" aria-label="Закрыть"></button>
-    <script src="js/script.min.js"></script>
+    <div class="modal__content modal__content--buy">
+      <form class="modal__form-buy" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+        <p class="modal__form-buy-text">Купить тур</p>
+        <label class="visually-hidden" for="tel">Введите свой номер телефона</label>
+        <input class="modal__input modal__input--tel" type="tel" id="tel" name="tel"
+          placeholder="* +7 Введите 10 цифр номера">
+        <label class="visually-hidden" for="email">Введите свой email</label>
+        <input class="modal__input modal__input--email" type="email" id="email" name="email" placeholder="E-mail">
+        <button class="modal__button-buy button" type="submit">Отправить</button>
+      </form>
+      <button class="modal__button-close" type="button" aria-label="Закрыть"></button>
+      <script src="js/script.min.js"></script>
+    </div>
   </section>
 </body>
 

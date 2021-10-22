@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -11,4 +12,30 @@
   font-weight: 400;
   min-height: 100%;
   color: $color-text-general;
+}
+
+.back-to-top__svg {
+  z-index: 1001;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  right: 3%;
+  cursor: pointer;
+  fill: $color-black;
+  display: none;
+
+  &:hover {
+    fill: $color-button-general;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: rgba($color-button-general, 0.5);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

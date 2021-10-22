@@ -114,6 +114,10 @@
   }
 }
 
+.feedback__input--error {
+  border: 1px solid $color-button-general;
+}
+
 .feedback__input::placeholder {
   color: $color-text-secondary;
   opacity: 1;
