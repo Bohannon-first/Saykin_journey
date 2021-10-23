@@ -32,6 +32,7 @@ const feedbackInputs = formFeedback.querySelectorAll('.feedback__input');
 const feedbackButtonSend = formFeedback.querySelector('.feedback__button-send');
 const arrowToUp = document.querySelector('.back-to-top__svg');
 const buyTourNow = document.querySelectorAll('a[href^="#feedback"]');
+const modals = document.querySelectorAll('.modal');
 const globalModalBuy = document.querySelector('.modal--buy');
 const globalModalSend = document.querySelector('.modal--send');
 
@@ -101,7 +102,7 @@ for (let modalInput of modalInputs) {
   }
 };
 
-// Закрытие модального окна о покупке тура
+// Закрытие модального окна о покупке тура на крестик
 for (let button of buttonClose) {
   button.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -130,6 +131,19 @@ window.addEventListener('keydown', (evt) => {
     }
   }
 });
+
+// Закрытие модалок по клику на оверлей
+modals.forEach(modal => modal.addEventListener('click', (evt) => {
+  if (evt.target == modal) {
+    modalBuy.classList.remove('modal__content--show');
+    modalSend.classList.remove('modal__content--show');
+    modalBuy.classList.remove('modal__content--error');
+    globalModalBuy.classList.remove('modal--blackout');
+    globalModalSend.classList.remove('modal--blackout');
+    modalInputs.forEach(modalInput => modalInput.classList.remove('modal__input--error'));
+    document.body.style.overflow = 'visible';
+  }
+}));
 
 // Проверка есть ли в браузере поддержка localStorage для feedback
 if (storage) {
