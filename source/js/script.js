@@ -35,6 +35,8 @@ const buyTourNow = document.querySelectorAll('a[href^="#feedback"]');
 const modals = document.querySelectorAll('.modal');
 const globalModalBuy = document.querySelector('.modal--buy');
 const globalModalSend = document.querySelector('.modal--send');
+const countriesLinks = document.querySelectorAll('.countries__link');
+const reviewsListItem = document.querySelectorAll('.reviews__list-item');
 
 // Удаление у всех кнопок 'Купить тур сейчас' атрибута href
 buyTourNow.forEach(elem => elem.removeAttribute('href'));
@@ -185,6 +187,43 @@ for (let feedbackInput of feedbackInputs) {
   }
 };
 
+// Табы по странам
+countriesLinks.forEach(link => link.addEventListener('click', (evt) => {
+  evt.preventDefault();
+
+  const id = evt.target.getAttribute('href').replace('#', '');
+  reviewsListItem.forEach(item => item.classList.remove('reviews__list-item--current'));
+  document.getElementById(id).classList.add('reviews__list-item--current');
+}));
+
+
+
+
+
+
+
+
+// // Подсветка названий стран
+// const reviewsItemCountries = document.querySelectorAll('.reviews__item-countries');
+// countriesLinks.forEach(link => link.addEventListener('click', (evt) => {
+//   evt.preventDefault();
+
+//   reviewsItemCountries.forEach(elem => elem.classList.remove('reviews__item-countries--current'));
+
+//   const idElem = elem.getAttribute('id');
+//   document.getElementById(idElem).classList.add('reviews__item-countries--current');
+
+// }));
+
+
+
+
+
+
+
+
+
+
 // Плавная прокрутка к якорю
 // Все ссылки с атрибутом href, начинающимся с '#'
 const links = document.querySelectorAll('a[href^="#"]');
@@ -214,9 +253,9 @@ arrowToUp.addEventListener('click', (evt) => {
 // Фукнкция показа кнопки при пролистывании вниз
 const showArrowToUp = () => {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    arrowToUp.style.display = 'block';
+    arrowToUp.style.opacity = 1;
   } else {
-    arrowToUp.style.display = 'none';
+    arrowToUp.style.opacity = 0;
   }
 }
 

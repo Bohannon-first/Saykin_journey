@@ -88,7 +88,7 @@
             </picture>
             <span class="countries__name">Греция</span>
             <div class="countries__aside">
-              <a class="countries__link" href="#">Смотреть подробнее</a>
+              <a class="countries__link" href="#greece">Смотреть подробнее</a>
             </div>
           </li>
           <li class="countries__item">
@@ -106,7 +106,7 @@
             </picture>
             <span class="countries__name">Албания</span>
             <div class="countries__aside">
-              <a class="countries__link" href="#">Смотреть подробнее</a>
+              <a class="countries__link" href="#albania">Смотреть подробнее</a>
             </div>
           </li>
           <li class="countries__item">
@@ -124,7 +124,7 @@
             </picture>
             <span class="countries__name">Македония</span>
             <div class="countries__aside">
-              <a class="countries__link" href="#">Смотреть подробнее</a>
+              <a class="countries__link" href="#macedonia">Смотреть подробнее</a>
             </div>
           </li>
           <li class="countries__item">
@@ -142,7 +142,7 @@
             </picture>
             <span class="countries__name">Черногория</span>
             <div class="countries__aside">
-              <a class="countries__link" href="#">Смотреть подробнее</a>
+              <a class="countries__link" href="#montenegro">Смотреть подробнее</a>
             </div>
           </li>
           <li class="countries__item">
@@ -160,7 +160,7 @@
             </picture>
             <span class="countries__name">Хорватия</span>
             <div class="countries__aside">
-              <a class="countries__link" href="#">Смотреть подробнее</a>
+              <a class="countries__link" href="#croatia">Смотреть подробнее</a>
             </div>
           </li>
         </ul>
@@ -169,14 +169,17 @@
 
     <section class="reviews">
       <ul class="reviews__list-countries">
-        <li class="reviews__item-countries reviews__item-countries--current">Греция</li>
-        <li class="reviews__item-countries">Албания</li>
-        <li class="reviews__item-countries reviews__item-countries--hidden">Македония</li>
-        <li class="reviews__item-countries reviews__item-countries--hidden">Черногория</li>
-        <li class="reviews__item-countries reviews__item-countries--hidden">Хорватия</li>
+        <li class="reviews__item-countries reviews__item-countries--current" id="itemGreece">Греция</li>
+        <li class="reviews__item-countries" id="itemAlbania">Албания</li>
+        <li class="reviews__item-countries reviews__item-countries--hidden" id="itemMacedonia">Македония
+        </li>
+        <li class="reviews__item-countries reviews__item-countries--hidden" id="itemMontenegro">
+          Черногория</li>
+        <li class="reviews__item-countries reviews__item-countries--hidden" id="itemCroatia">Хорватия
+        </li>
       </ul>
       <ul class="reviews__list">
-        <li class="reviews__list-item reviews__list-item--current">
+        <li class="reviews__list-item reviews__list-item--current" id="greece">
           <h2 class="reviews__title">Греция</h2>
           <p class="reviews__description">На севере Греции находится один из крупнейших комплексов монастырей,
             расположенных на вершинах скал.
@@ -215,14 +218,14 @@
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item">
+        <li class="reviews__list-item" id="albania">
           <h2 class="reviews__title">Албания</h2>
           <p class="reviews__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
             удивительным пляжем. Вначале
             кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако,
             присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
           </p>
-          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="reviews__button button button__buy" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/albania-reviews-mobile.webp 1x, img/content/mobile/albania-reviews-mobile@2x.webp 2x">
@@ -253,13 +256,13 @@
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item">
+        <li class="reviews__list-item" id="macedonia">
           <h2 class="reviews__title">Македония</h2>
           <p class="reviews__description">В Македонии нашей целью будет посетить Палаошник, который расположился в
             удивительно красивой лесистой
             местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
             где находится археологический памятник Кокино в длину около 100 метров.</p>
-          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="reviews__button button button__buy" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/macedonia-reviews-mobile.webp 1x, img/content/mobile/macedonia-reviews-mobile@2x.webp 2x">
@@ -291,12 +294,12 @@
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item">
+        <li class="reviews__list-item" id="montenegro">
           <h2 class="reviews__title">Черногория</h2>
           <p class="reviews__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
             некоторых местах высотой берегов
             доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
-          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="reviews__button button button__buy" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/montenegro-reviews-mobile.webp 1x, img/content/mobile/montenegro-reviews-mobile@2x.webp 2x">
@@ -326,13 +329,13 @@
             </div>
           </blockquote>
         </li>
-        <li class="reviews__list-item">
+        <li class="reviews__list-item" id="croatia">
           <h2 class="reviews__title">Хорватия</h2>
           <p class="reviews__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
             увлечет вас на 80-ти метровую
             глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами — сталактитами и
             сталагмитами — формировавшимися тысячи и тысячи лет.</p>
-          <a class="reviews__button button" href="#feedback">Купить тур сейчас</a>
+          <a class="reviews__button button button__buy" href="#feedback">Купить тур сейчас</a>
           <picture class="reviews__img">
             <source media="(max-width: 767px)"
               srcset="img/content/mobile/croatia-reviews-mobile.webp 1x, img/content/mobile/croatia-reviews-mobile@2x.webp 2x">
