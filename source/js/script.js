@@ -37,6 +37,7 @@ const globalModalBuy = document.querySelector('.modal--buy');
 const globalModalSend = document.querySelector('.modal--send');
 const countriesLinks = document.querySelectorAll('.countries__link');
 const reviewsListItem = document.querySelectorAll('.reviews__list-item');
+const reviewsItemCountries = document.querySelectorAll('.reviews__item-countries');
 
 // Удаление у всех кнопок 'Купить тур сейчас' атрибута href
 buyTourNow.forEach(elem => elem.removeAttribute('href'));
@@ -194,35 +195,16 @@ countriesLinks.forEach(link => link.addEventListener('click', (evt) => {
   const id = evt.target.getAttribute('href').replace('#', '');
   reviewsListItem.forEach(item => item.classList.remove('reviews__list-item--current'));
   document.getElementById(id).classList.add('reviews__list-item--current');
+
+// Добавление модификатора на название стран
+  reviewsItemCountries.forEach(elem => elem.classList.remove('reviews__item-countries--current'));
+
+  reviewsItemCountries.forEach(item => {
+    if (item.classList.contains(`reviews__item-countries--${id}`)) {
+      item.classList.add('reviews__item-countries--current')
+    }
+  });
 }));
-
-
-
-
-
-
-
-
-// // Подсветка названий стран
-// const reviewsItemCountries = document.querySelectorAll('.reviews__item-countries');
-// countriesLinks.forEach(link => link.addEventListener('click', (evt) => {
-//   evt.preventDefault();
-
-//   reviewsItemCountries.forEach(elem => elem.classList.remove('reviews__item-countries--current'));
-
-//   const idElem = elem.getAttribute('id');
-//   document.getElementById(idElem).classList.add('reviews__item-countries--current');
-
-// }));
-
-
-
-
-
-
-
-
-
 
 // Плавная прокрутка к якорю
 // Все ссылки с атрибутом href, начинающимся с '#'
