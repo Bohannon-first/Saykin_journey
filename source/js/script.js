@@ -40,7 +40,7 @@ const reviewsListItem = document.querySelectorAll('.reviews__list-item');
 const reviewsItemCountries = document.querySelectorAll('.reviews__item-countries');
 
 // Удаление у всех кнопок 'Купить тур сейчас' атрибута href
-buyTourNow.forEach(elem => elem.removeAttribute('href'));
+buyTourNow.forEach(elem => elem.setAttribute('href', ''));
 
 // Удаление id у feedback, чтобы при загрузке страницы не было прокрутки к нему
 feedback.removeAttribute('id');

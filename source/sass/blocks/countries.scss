@@ -120,6 +120,14 @@
     }
   }
 
+  &:focus-within::after {
+    opacity: 1;
+  }
+
+  &:focus-within .countries__aside {
+    display: block;
+  }
+
   @media (max-width: $tablet-width) {
     width: 288px;
     min-height: 425px;
@@ -169,7 +177,8 @@
   z-index: 1000;
   display: none;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $color-white;
   }
 
@@ -189,7 +198,8 @@
   padding: 30px 25px;
   box-sizing: border-box;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     color: $color-black;
   }
 
