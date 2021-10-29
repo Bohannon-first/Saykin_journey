@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '12.18'
 
-    - uses: actions/checkout@main
+    - uses: actions/checkout@master
       name: Checkout
 
     - name: Install dependencies
