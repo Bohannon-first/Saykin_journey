@@ -17,7 +17,7 @@ navToggle.addEventListener('click', () => {
 // Переменные
 const modalSend = document.querySelector('.modal__content--send');
 const modalBuy = document.querySelector('.modal__content--buy');
-const buttonBuy = document.querySelectorAll('.button__buy');
+const buttonBuy = document.querySelectorAll('.button--buy');
 const formSend = modalBuy.querySelector('.modal__form-buy');
 const buttonClose = document.querySelectorAll('.modal__button-close');
 const modalTel = formSend.querySelector('.modal__input--tel');
@@ -30,7 +30,7 @@ const feedbackInputPhone = formFeedback.querySelector('.feedback__input--phone')
 const feedbackInputEmail = formFeedback.querySelector('.feedback__input--email');
 const feedbackInputs = formFeedback.querySelectorAll('.feedback__input');
 const feedbackButtonSend = formFeedback.querySelector('.feedback__button-send');
-const arrowToUp = document.querySelector('.back-to-top__svg');
+const arrowToUp = document.querySelector('.back-to-top');
 const buyTourNow = document.querySelectorAll('a[href^="#feedback"]');
 const modals = document.querySelectorAll('.modal');
 const globalModalBuy = document.querySelector('.modal--buy');
@@ -39,7 +39,7 @@ const countriesLinks = document.querySelectorAll('.countries__link');
 const reviewsListItem = document.querySelectorAll('.reviews__list-item');
 const reviewsItemCountries = document.querySelectorAll('.reviews__item-countries');
 
-// Удаление у всех кнопок 'Купить тур сейчас' атрибута href
+// Удаление у всех кнопок 'Купить тур сейчас' содержимое атрибута href
 buyTourNow.forEach(elem => elem.setAttribute('href', ''));
 
 // Удаление id у feedback, чтобы при загрузке страницы не было прокрутки к нему
@@ -196,7 +196,7 @@ countriesLinks.forEach(link => link.addEventListener('click', (evt) => {
   reviewsListItem.forEach(item => item.classList.remove('reviews__list-item--current'));
   document.getElementById(id).classList.add('reviews__list-item--current');
 
-// Добавление модификатора на название стран
+// Добавление модификатора на название страны
   reviewsItemCountries.forEach(elem => elem.classList.remove('reviews__item-countries--current'));
 
   reviewsItemCountries.forEach(item => {

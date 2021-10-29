@@ -60,6 +60,11 @@
     background-color: rgba($color-text-secondary, 1);
   }
 
+  &:focus::after,
+  &:focus::before {
+    background-color: rgba($color-text-secondary, 1);
+  }
+
   @media (max-width: $mobile-width) {
     right: 25px;
   }
@@ -201,7 +206,6 @@
 
 // Тряска в случае ошибки
 @keyframes shake {
-
   0%,
   100% {
     transform: translateX(0);

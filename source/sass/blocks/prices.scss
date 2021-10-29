@@ -20,7 +20,6 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     width: 726px;
-    // padding: 0 21px;
     box-sizing: border-box;
   }
 
@@ -28,7 +27,6 @@
     width: 288px;
     display: flex;
     flex-direction: column;
-    // padding: 0 16px;
   }
 }
 
@@ -78,7 +76,9 @@
   }
 
   &--complex:hover,
-  &--economy:hover {
+  &--economy:hover,
+  &--complex:focus-within,
+  &--economy:focus-within {
     border-color: $color-button-general;
 
     .prices__title {

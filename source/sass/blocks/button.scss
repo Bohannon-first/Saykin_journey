@@ -11,7 +11,8 @@
   box-sizing: border-box;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-button-hover;
   }
 }
