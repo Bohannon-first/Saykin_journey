@@ -55,7 +55,7 @@ try {
   isStorageSupport = false;
 }
 
-// Цикл в ходе которого каждому элементу навешивается обработчик события 'клик'
+// Цикл в ходе которого каждому элементу навешивается обработчик события 'click'
 for (let button of buttonBuy) {
   button.addEventListener('click', (evt) => {
     evt.preventDefault();
