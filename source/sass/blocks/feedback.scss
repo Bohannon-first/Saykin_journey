@@ -2,19 +2,19 @@
   position: relative;
   margin: 0 auto;
   width: 1170px;
-  background-image: url("../../img/background/desktop/bgc-form-desktop.jpg");
+  background-image: url("../img/background/desktop/bgc-form-desktop.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   min-height: 455px;
   margin-bottom: 160px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background/desktop/bgc-form-desktop@2x.jpg");
+    background-image: url("../img/background/desktop/bgc-form-desktop@2x.jpg");
     background-size: 1688px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/background/tablet/bgc-form-tablet.jpg");
+    background-image: url("../img/background/tablet/bgc-form-tablet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -26,7 +26,7 @@
     box-sizing: border-box;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background/tablet/bgc-form-tablet@2x.jpg");
+      background-image: url("../img/background/tablet/bgc-form-tablet@2x.jpg");
       background-size: 1534px auto;
     }
   }
